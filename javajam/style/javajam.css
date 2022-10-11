@@ -1,5 +1,9 @@
 body {
     background-color: #fcebb6;
+    background-image: url(../images/fadedroad50.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     color: #221811;
     font-family: Tahoma, Arial, sans-serif;
 }
@@ -11,19 +15,45 @@ header {
     font-family: 'Sue Ellen Francisco', cursive;
     font-variant: small-caps;
     font-size: 200%;
+    padding: 5px 0px;
+}
+
+main {
+    padding: 0em 2em 2em 2em;
 }
 
 h1 {
-    line-height: 200%;
+    font-size: 3em;
 }
 
 h2 {
     color: #8c3826;
 }
 
+h3 {
+    color: #8C3826;
+}
+
+h4 {
+    background-color: #D2B48C;
+    font-size: 1.2em;
+    padding-left: .5em;
+    padding-bottom: .25em;
+}
+
+dt {
+    color: #8C3826;
+}
+
 nav {
     text-align: center;
     font-weight: bold;
+    font-size: 1.5em;
+    padding: 5px 0px;
+}
+
+nav a { 
+    text-decoration: none; 
 }
 
 footer {
@@ -31,11 +61,33 @@ footer {
     font-size: 0.6em;
     font-style: italic;
     text-align: center;
+    padding-top: 1em;
+    border-top: solid 2px #8C3826;
+}
+
+img {
+    border-style: none;
+    max-width: 100%;
+    height: auto;
 }
 
 #wrapper {
     width: 80%;
+    min-width: 900px;
+    max-width: 1280px;
     background-color: #FEFAEB;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 5px 5px black;
+}
+
+#homehero {
+    background-image: url(images/hero.jpg);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.details {
+    padding: 0% 20%;
 }
