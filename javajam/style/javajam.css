@@ -82,7 +82,7 @@ img {
 }
 
 #homehero {
-    background-image: url(images/hero.jpg);
+    background-image: url(../images/hero.jpg);
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
