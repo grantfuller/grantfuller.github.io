@@ -58,14 +58,17 @@
     <header id="header" class="d-flex align-items-center">
         <div class="container d-flex align-items-center justify-content-between">
 
-            <h1 class="logo"><a href="index.html">Tap Classes</a></h1>
+            <h1 class="logo">
+                <a href="index.html"><img src="assets/img/Tap-Shoes-03.jpg"> Tap Classes</a>
+            </h1>
+            <a href="javascript:window.external.AddFavorite('https://grantfuller.github.io/project/index.html', 'Tap with Grant')">Add to Favorites</a>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">Instructor</a></li>
+                    <li><a class="nav-link scrollto" href="#instructor">Instructor</a></li>
                     <li><a class="nav-link scrollto" href="#services">Classes</a></li>
                     <!-- <li><a class="nav-link scrollto " href="#portfolio">Gallery</a></li>
                     <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
@@ -89,6 +92,19 @@
                     </li> -->
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                 </ul>
+                <div id="siteSearch">
+                    <!-- SiteSearch Google -->
+                    <form role="search" method="get" action="http://www.google.com/search">
+                        <div id="search">
+                            <!-- <label for="keyword">Search:</label>
+                            <input type="search" name="keyword" id="keyword" placeholder="Search..."> -->
+                            <label for="q"></label>
+                            <input id="q" name="q" size="20" maxlength="255" value="" type="text" placeholder="Search...">
+                            <input name="domains" value="https://grantfuller.github.io/project/" type="hidden" />
+                            <input type="image" src="assets/img/search.png" alt="Search">
+                        </div>
+                    </form>
+                </div>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
             <!-- .navbar -->
@@ -101,7 +117,7 @@
     <section id="hero" class="d-flex align-items-center">
         <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
             <h1>Want to take tap classes?</h1>
-            <h2>We offer free weekly tap classes to both beginner and intermediate level dancers.</h2>
+            <h2>We offer free tap classes to both beginner and intermediate level dancers.</h2>
             <a href="#contact" class="btn-get-started scrollto">Contact Us</a>
         </div>
     </section>
@@ -109,8 +125,8 @@
 
     <main id="main">
 
-        <!-- ======= About Section ======= -->
-        <section id="about" class="about">
+        <!-- ======= Instructor Section ======= -->
+        <section id="instructor" class="instructor">
             <div class="container">
 
                 <div class="row">
@@ -140,7 +156,7 @@
 
             </div>
         </section>
-        <!-- End About Section -->
+        <!-- End Insructor Section -->
 
         <!-- ======= Clients Section ======= -->
         <section id="clients" class="clients">
@@ -181,37 +197,46 @@
         <!-- ======= Services Section ======= -->
         <section id="services" class="services">
             <div class="container">
-
-                <div class="section-title">
-                    <span>Classes</span>
-                    <h2>Classes</h2>
-                    <p>We offer both a beginning and intermediate level class</p>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-6" data-aos="fade-up">
-                        <div class="icon-box">
-                            <div class="icon"><i class='bx bxs-calendar-check'></i></div>
-                            <h4><a href="">Beginning</a></h4>
-                            <p>
-                                This class with introduce a variety of beginning tap moves and techniques that will form a foundation on which to build. Come with little to no experience! We will cover flaps, shuffles, toe knocks, cramp rolls, and many other steps
-                            </p>
-                            <br>
-
-                        </div>
+                <section class="section">
+                    <div class="section-title">
+                        <span>Classes</span>
+                        <h2>Classes</h2>
+                        <p>We offer both a beginning and intermediate level class</p>
                     </div>
-
-                    <div class="col-lg-6" data-aos="fade-up">
-                        <div class="icon-box">
-                            <div class="icon"><i class='bx bxs-calendar-check'></i></i>
+                    <div class="about-center section-center">
+                        <article class="about-img">
+                            <img src="assets/img/tap show tie.jpg" alt="dancer tying their shoe" />
+                        </article>
+                        <article class="about">
+                            <!-- btn container -->
+                            <div class="btn-container">
+                                <button class="tab-btn active" data-id="beginning">Beginning</button>
+                                <button class="tab-btn" data-id="intermediate">Intermediate</button>
                             </div>
-                            <h4><a href="">Intermediate</a></h4>
-                            <p>This is for students who have a foundational knowledge of tap moves and techniques. In this class we will focus on speed and variation of sound. We will cover a variety of moves and their variations (riffs, Maxie Ford, time
-                                steps, and many others), syncopated and swung rhythms, and much more. Come prepared for a workout!</p>
-                        </div>
+                            <div class="about-content">
+                                <!-- single item -->
+                                <div class="article active" id="beginning">
+                                    <h4>Beginning</h4>
+                                    <p>
+                                        This class with introduce a variety of beginning tap moves and techniques that will form a foundation on which to build. Come with little to no experience! We will cover flaps, shuffles, toe knocks, cramp rolls, and many other steps
+                                    </p>
+                                </div>
+                                <!-- end of single item -->
+                                <!-- single item -->
+                                <div class="article" id="intermediate">
+                                    <h4>Intermediate</h4>
+                                    <p>
+                                        This is for students who have a foundational knowledge of tap moves and techniques. In this class we will focus on speed and variation of sound. We will cover a variety of moves and their variations (riffs, Maxie Ford, time steps, and many others), syncopated
+                                        and swung rhythms, and much more. Come prepared for a workout!
+                                    </p>
+                                </div>
+                                <!-- end of single item -->
+                            </div>
+                        </article>
                     </div>
-
-                </div>
+                </section>
+                <!-- javascript -->
+                <script src="assets/js/apps.js"></script>
 
             </div>
         </section>
@@ -600,7 +625,7 @@
 
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><span>Grant Tap</span></strong>. All Rights Reserved
+                &copy; Copyright 2022 <strong><span>Grant Tap</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
